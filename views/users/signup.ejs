@@ -1,0 +1,21 @@
+<%- layout("/layouts/boilerplate") %>
+<body>        
+    <form action="/signup" method="post" class="needs-validation" novalidate>
+    
+        <div class="mb-3 col">
+            <label for="username" class="form-label">Username</label>
+            <input name="username" id="username" type="text" placeholder="Enter a unique username here" class="form-control" required>
+        </div>
+
+        <div class="mb-3 col">
+            <label for="email" class="form-label">Email ID</label>
+            <input name="email" id="email" type="email" placeholder="Enter your email here" class="form-control" required>
+        </div>
+        
+        <div class="mb-3 col">
+            <label for="password" class="form-label" >Password</label>
+            <input name="password" id="password" type="password" placeholder="Enter a strong password" class="form-control" required>
+        </div>
+        <button class="btn btn-success">SignUp</button>
+    </form>
+</body>
